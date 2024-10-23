@@ -1,0 +1,16 @@
+[PROJECT]
+Target=micro_proje.hex
+Processor_Text=PIC16F877A
+CCSVersion=5.007
+Compiler=PCM
+[Target Data]
+FileList=micro_proje.c
+[Directories]
+Include=C:\Program Files (x86)\PICC\Devices\;C:\Program Files (x86)\PICC\Drivers\
+[micro_proje.c]
+Type=4
+[mru-list]
+1=micro_proje.c
+[Units]
+Count=1
+1=micro_proje (main)

@@ -1,0 +1,207 @@
+003     STATUS
+003.5   RP0
+003.6   RP1
+004-005 @WRITE_PROGRAM_MEMORY8.P1
+004-005 @READ_PROGRAM_MEMORY8.P2
+006.0   MODE_SELECT_PIN
+006     PORTB
+006.1   SERVOPIN
+006.2   RIGHT_MOVE
+006.3   LEFT_MOVE
+008     lcdlat
+008     PORTD
+008     lcd
+008     PSP_DATA
+00B     INTCON
+00B.1   INTF
+00B.4   INTE
+00B.6   PEIE
+00B.7   GIE
+00C     PIR
+00C.1   TMR2IF
+011     TMR2
+012     T2CON
+015     CCP_1_LOW
+015     CCP_1
+016     CCP_1_HIGH
+01B     CCP_2_LOW
+01B     CCP_2
+01C     CCP_2_HIGH
+01E     ADRESH
+01F.0   ADCCON0_START
+01F     ADCCON0
+01F.2   ADCCON0_GO_DONE
+01F.3   channel
+020     @INTERRUPT_AREA
+021     @INTERRUPT_AREA
+022     @INTERRUPT_AREA
+023     @INTERRUPT_AREA
+024     @INTERRUPT_AREA
+025     @INTERRUPT_AREA
+026     @INTERRUPT_AREA
+027     MODE_STATE
+028-02B debouncedelay_loopauto
+02C-02F debouncedelay_loopmanuel
+030-031 duty
+032-033 endtime
+034-035 j
+036-037 servostate
+038-039 left_ldr
+03A-03B right_ldr
+03C-03D difference
+03E     lcd_init.i
+03E     @PSTRINGCN_647.P1
+03E-03F @MULS1616.P2
+03E     @PSTRINGCN7_647.P3
+03E-03F @PRINTF_LU_647.P4
+03E     MAIN.@SCRATCH1
+03E     @PSTRINGC7_647.@SCRATCH1
+03E     @PSTRINGC_647.@SCRATCH1
+03F     lcd_init.@SCRATCH1
+03F     @PSTRINGC7_647.@SCRATCH2
+03F     @PSTRINGCN_647.@SCRATCH1
+03F     @PSTRINGC_647.@SCRATCH2
+03F     @PSTRINGCN7_647.@SCRATCH1
+040-041 @MULS1616.P1
+040     @PSTRINGC7_647.@SCRATCH3
+040     @PSTRINGCN_647.@SCRATCH2
+040     @PRINTF_LU_647.@SCRATCH1
+040     @PSTRINGCN7_647.@SCRATCH2
+041     @PSTRINGC7_647.@SCRATCH4
+041     @PRINTF_LU_647.@SCRATCH2
+041     @PSTRINGCN7_647.@SCRATCH3
+042     @PRINTF_LU_647.@SCRATCH3
+042     @MULS1616.@SCRATCH1
+042     @PSTRINGCN7_647.@SCRATCH4
+043     @PRINTF_LU_647.@SCRATCH4
+043     @MULS1616.@SCRATCH2
+044     @PRINTF_LU_647.@SCRATCH5
+045     @PRINTF_LU_647.@SCRATCH6
+046     @PRINTF_LU_647.@SCRATCH7
+047     lcd_putc.c
+048     lcd_gotoxy.x
+048     @delay_ms1.P1
+049     lcd_gotoxy.y
+04A     lcd_gotoxy.address
+04B     lcd_gotoxy.@SCRATCH1
+04C     lcd_send_byte.address
+04D     lcd_send_byte.n
+04E     lcd_read_byte.low
+04E     lcd_send_byte.@SCRATCH1
+04F     lcd_read_byte.high
+04F     lcd_send_nibble.n
+050     lcd_read_byte.@SCRATCH1
+051     MODE_SELECT.@SCRATCH1
+077     @SCRATCH
+078     @SCRATCH
+078     _RETURN_
+079     @SCRATCH
+07A     @SCRATCH
+07F     @INTERRUPT_AREA
+081     OPTION_REG
+081.6   INTEDG
+086     TRISB
+088     lcdtris
+088     TRISD
+08C     PIE1
+08C.1   TMR2IE
+092     PR2
+09C.6   C1OUT
+09C.7   C2OUT
+09E     ADRESL
+09F     ADCCON1
+0FF     @INTERRUPT_AREA
+10D-10E @READ_PROGRAM_MEMORY8.P1
+10D-10E @WRITE_PROGRAM_MEMORY8.P2
+17F     @INTERRUPT_AREA
+1FF     @INTERRUPT_AREA
+27F     @INTERRUPT_AREA
+2FF     @INTERRUPT_AREA
+37F     @INTERRUPT_AREA
+3FF     @INTERRUPT_AREA
+47F     @INTERRUPT_AREA
+4FF     @INTERRUPT_AREA
+57F     @INTERRUPT_AREA
+5FF     @INTERRUPT_AREA
+67F     @INTERRUPT_AREA
+6FF     @INTERRUPT_AREA
+77F     @INTERRUPT_AREA
+7FF     @INTERRUPT_AREA
+87F     @INTERRUPT_AREA
+8FF     @INTERRUPT_AREA
+97F     @INTERRUPT_AREA
+9FF     @INTERRUPT_AREA
+A7F     @INTERRUPT_AREA
+AFF     @INTERRUPT_AREA
+B7F     @INTERRUPT_AREA
+BFF     @INTERRUPT_AREA
+C7F     @INTERRUPT_AREA
+CFF     @INTERRUPT_AREA
+D7F     @INTERRUPT_AREA
+DFF     @INTERRUPT_AREA
+E7F     @INTERRUPT_AREA
+EFF     @INTERRUPT_AREA
+F7F     @INTERRUPT_AREA
+FFF     @INTERRUPT_AREA
+
+ROM Allocation:
+000038  LCD_INIT_STRING.call
+00003C  LCD_INIT_STRING.data
+000040  MODE_SELECT
+00009D  INT_TMR2
+0000BF  @const710.call
+0000C6  @const712.call
+0000D9  @const721.call
+0000E3  @const724.call
+0000ED  @const725.call
+0000F4  @const726.call
+0000FD  @delay_ms1
+000111  lcd_send_nibble
+000122  lcd_read_nibble
+000128  lcd_send_byte
+00012E  lcd_read_byte
+00016A  lcd_init
+00019D  lcd_gotoxy
+0001AF  lcd_putc
+0001DB  @PSTRINGC7_647
+000226  @PSTRINGCN_647
+000247  @PRINTF_LU_647
+0002AA  @MULS1616
+0002DA  @PSTRINGC_647
+0002FF  @PSTRINGCN7_647
+000355  MAIN
+000355  @cinit1
+000372  @cinit2
+
+Project Directory:
+    C:\Users\ASUS\Desktop\micro_proje\
+
+Project Files:
+    micro_proje.c                                           [03-Oca-24 23:14  CRC=82595FDC]
+    ..\..\..\..\Program Files (x86)\PICC\Devices\16F877a.h  [21-Haz-13 16:04  CRC=4E65664C]
+    ..\..\..\..\Program Files (x86)\PICC\Drivers\lcd.c      [23-Aðu-12 09:01  CRC=D28E8746]
+
+Source signature=75DBD4B4
+
+Units:
+    micro_proje (main)
+
+Compiler Settings:
+    Processor:      PIC16F877A
+    Pointer Size:   16
+    ADC Range:      0-255
+    Opt Level:      9
+    Short,Int,Long: UNSIGNED: 1,8,16
+    Float,Double:   32,32
+
+Output Files:
+    XREF file:   micro_proje.xsym
+    Errors:      micro_proje.err
+    Ext Symbols: micro_proje.esym
+    INHX8:       micro_proje.hex
+    Symbols:     micro_proje.sym
+    List:        micro_proje.lst
+    Debug/COFF:  micro_proje.cof
+    Project:     micro_proje.ccspjt
+    Call Tree:   micro_proje.tre
+    Statistics:  micro_proje.STA
